@@ -203,7 +203,6 @@ function getCookie(name) {
  * Sets a cookie with JSON/string value and expiry (in milliseconds from now)
  */
 function setCookie(name, value, durationMs) {
-    // const expires = new Date(Date.now() + durationMs).toUTCString();
     let cookieStr = `${name}=${value.value}; path=/; SameSite=Lax`;
 
     // Add expiration only if duration is provided
@@ -248,7 +247,7 @@ function handleDYCookie(name, sourceGetter, durationMs = null) {
     if (newValue) {
         const cookieObj = { value: newValue, expires: now + durationMs };
         setCookie(name, cookieObj, durationMs);
-        console.log(`Cookie '${name}' set:`, cookieObj);
+        // console.log(`Cookie '${name}' set:`, cookieObj);
     } else {
         console.warn(`Cannot set cookie '${name}' — source unavailable.`);
     }
@@ -273,4 +272,5 @@ function waitForDYCookies(retries = 10, delay = 100) {
 window.addEventListener('load', () => {
     waitForDYCookies();
 });
+
 
