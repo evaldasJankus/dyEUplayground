@@ -124,6 +124,10 @@ footer {
      display: none !important;
 }
 
+.placeholder[id^="category-placeholder-"] {
+     display: none !important;
+}
+
 /* Category Page */
 #category-container {
   display: flex;
@@ -163,4 +167,5 @@ footer {
   font-size: 1.2em;
 
 }
+
 
