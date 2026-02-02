@@ -108,6 +108,10 @@ footer {
   margin-top: 1em;
 }
 
+[id^="product-placeholder-"] {
+     display: none;
+}
+
 .placeholder {
   height: 80px;
   border: 2px dashed #bbb;
@@ -155,4 +159,5 @@ footer {
   margin-bottom: 1em;
   font-weight: bold;
   font-size: 1.2em;
+
 }
