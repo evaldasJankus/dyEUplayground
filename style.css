@@ -108,9 +108,7 @@ footer {
   margin-top: 1em;
 }
 
-[id^="product-placeholder-"] {
-     display: none;
-}
+
 
 .placeholder {
   height: 80px;
@@ -120,6 +118,10 @@ footer {
   justify-content: center;
   background: #f4f6f8;
   border-radius: 6px;
+}
+
+.placeholder[id^="product-placeholder-"] {
+     display: none !important;
 }
 
 /* Category Page */
@@ -161,3 +163,4 @@ footer {
   font-size: 1.2em;
 
 }
+
